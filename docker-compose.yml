@@ -2,6 +2,7 @@ version: "3.8"
 services:
     # PHP Service
     php:
+        container_name: distedavim_backend
         build:
             context: .
             target: php
@@ -17,9 +18,10 @@ services:
         ports:
             - 8000:8000
         depends_on:
-            - database
+            - mysql
     # Database Server
-    database:
+    mysql:
+        container_name: distedavim_database
         image: mysql:8.0
         ports:
             -   3306:3306

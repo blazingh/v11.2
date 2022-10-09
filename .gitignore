@@ -1,27 +1,27 @@
-/bootstrap/compiled.php
-/vendor
+/backend/bootstrap/compiled.php
+/backend/vendor
 
 
-/build/logs
-/build/coverage
+/backend/build/logs
+/backend/build/coverage
 
 
-/app/tests/_log
+/backend/app/tests/_log
 
 
-composer.phar
+/backendcomposer.phar
 
 
-.DS_Store
+/backend.DS_Store
 
 
-/.idea
-/_ide_helper.php
+/backend/.idea
+/backend/_ide_helper.php
 
 
-/app/config/packages
-/public/packages
+/backend/app/config/packages
+/backend/public/packages
 
 
-/node_modules
+/backend/node_modules
 

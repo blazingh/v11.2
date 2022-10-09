@@ -4,7 +4,7 @@ RUN apt-get update -y
 RUN apt-get install -y unzip libpq-dev libcurl4-gnutls-dev
 RUN docker-php-ext-install pdo pdo_mysql bcmath
 
-WORKDIR /var/www
+WORKDIR /var/www/backend
 
 COPY . .
 

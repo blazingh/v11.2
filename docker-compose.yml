@@ -3,6 +3,7 @@ services:
     # PHP backednd Service
     php:
         container_name: distedavim_backend
+        restart: unless-stopped
         build:
             context: ./backend
             dockerfile: Dockerfile
@@ -24,6 +25,7 @@ services:
     # MySQL database Server
     mysql:
         container_name: distedavim_database
+        restart: unless-stopped
         image: mysql:8.0
         ports:
             -   3306:3306
